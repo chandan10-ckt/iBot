@@ -1,0 +1,725 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>iBOT WebPage</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<link rel="shortcut icon" href="images/fav.png" />	
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+		 <!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 <!-- Custom Theme files -->
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!----webfonts---->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700' rel='stylesheet' type='text/css'>
+		<!----//webfonts---->
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+</head>
+	<body>
+		<!-----start-container----->
+		<!-----header-section------>
+		<div class="header-section">
+			<!----- start-header---->
+			<div id="home" class="header">
+				<div class="container">
+					<div class="top-header">
+						<div class="logo">
+							<!-- <a href="#"><img src="images/logo.png" title="logo" /></a> -->
+						</div>
+						<!----start-top-nav---->
+						 <nav class="top-nav">
+							<ul class="top-nav">
+								<li class="active"><a href="#home" class="scroll">Home </a></li>
+								<li class="page-scroll"><a href="#fea" class="scroll">FEATURES</a></li>
+								<li class="page-scroll"><a href="#gallery" class="scroll">Gallery</a></li>
+								<li class="page-scroll"><a href="#about" class="scroll">About </a></li>
+								<!-- <li class="contatct-active" class="page-scroll"><a href="#contact" class="scroll">Contact</a></li> -->
+							</ul>
+							<!-- <a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a> -->
+						</nav>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<!----- //End-header---->
+			<!----- start-slider---->
+			<!----start-slider-script---->
+			<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: true,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			<!----//End-slider-script---->
+			<!-- Slideshow 4 -->
+			    <div  id="top" class="callbacks_container">
+			      <ul class="rslides" id="slider4">
+			        <li>
+			          <img src="images/slide.jpg" alt="">
+			          <div class="caption text-center">
+			          	<div class="slide-text-info">
+			          		<h1>Introducing <span>iBot</span></h1>
+			          		<p>Interacting Bot is a movable robot that is not only capable of moving smartly by being controlled by a video game controller, but can also interact with you using its head(screen) while helping you understand the environment around you using Deep Learning techniques.The salient features of this bot are:</p>
+			          		<div class="slide-text">
+			          			<ul>
+			          				<li><span> </span>Controllable with the help of any Video Controller </li>
+			          				<li><span> </span>Collision Avoidance with the help of array of ultrasound sensors attached to its base. </li>
+			          				<li><span> </span>Automatic direction change in case of obstruction. </li>
+			          				<li><span> </span>Capable of carrying considerable amount of weight.</li>
+			          				<li><span> </span>Has the ability to scan QR code in order to access various information such as web links, images, text.</li>
+			          				<li><span> </span>Uses Object Detection and Scene Understanding Framework in order to analyze its surrounding environment. </li>
+			          				<li><span> </span>Capable of interacting with users using a virtual face. </li>
+			     
+			          			</ul>
+			          		</div>
+			          		<div class="clearfix"> </div>
+			          		<div class="big-btns">
+			          			<!-- <a class="download" href="#"><label> </label>Download</a>
+			          			<a class="view" href="#"><label> </label>Vew Gallery</a> -->
+			          		</div>
+			          	</div>
+			          </div>
+			        </li>
+			        <!-- <li>
+			          <img src="images/slide.jpg" alt="">
+			          <div class="caption text-center">
+			          	<div class="slide-text-info">
+			          		<h1>Introducing <span>Amazing app.</span></h1>
+			          		<h2>Made to modify and use anywhere</h2>
+			          		<div class="slide-text">
+			          			<ul>
+			          				<li><span> </span>Sed ut perspiciatis unde omnis </li>
+			          				<li><span> </span>Iste natus error sit voluptatem accusantium </li>
+			          				<li><span> </span>doloremque laudantium</li>
+			          			</ul>
+			          		</div>
+			          		<div class="clearfix"> </div>
+			          		<div class="big-btns">
+			          			<a class="download" href="#"><label> </label>Download</a>
+			          			<a class="view" href="#"><label> </label>Vew Gallery</a>
+			          		</div>
+			          	</div>
+			          </div>
+			        </li>
+			        <li>
+			          <img src="images/slide.jpg" alt="">
+			          <div class="caption text-center">
+			          	<div class="slide-text-info">
+			          		<h1>Introducing <span>Best app.</span></h1>
+			          		<h2>Made to modify and use anywhere</h2>
+			          		<div class="slide-text">
+			          			<ul>
+			          				<li><span> </span>Sed ut perspiciatis unde omnis </li>
+			          				<li><span> </span>Iste natus error sit voluptatem accusantium </li>
+			          				<li><span> </span>doloremque laudantium</li>
+			          			</ul>
+			          		</div>
+			          		<div class="clearfix"> </div>
+			          		<div class="big-btns">
+			          			<a class="download" href="#"><label> </label>Download</a>
+			          			<a class="view" href="#"><label> </label>Vew Gallery</a>
+			          		</div>
+			          	</div>
+			          </div>
+			        </li>
+			        <li>
+			          <img src="images/slide.jpg" alt="">
+			           <div class="caption text-center">
+			           <div class="slide-text-info">
+			          		<h1>Introducing <span>Amazing app.</span></h1>
+			          		<h2>Made to modify and use anywhere</h2>
+			          		<div class="slide-text">
+			          			<ul>
+			          				<li><span> </span>Sed ut perspiciatis unde omnis </li>
+			          				<li><span> </span>Iste natus error sit voluptatem accusantium </li>
+			          				<li><span> </span>doloremque laudantium</li>
+			          			</ul>
+			          		</div>
+			          		<div class="clearfix"> </div>
+			          		<div class="big-btns">
+			          				<a class="download" href="#"><label> </label>Download</a>
+			          				<a class="view" href="#"><label> </label>Vew Gallery</a>
+			          		</div>
+			          	</div>
+			          </div>
+			        </li> -->
+			      </ul>
+			    </div>
+			    <div class="clearfix"> </div>
+			    <!-----divice----->
+			    	<div class="divice-demo">
+			    		
+			    	</div>
+			    <!---//divice----->
+			<!----- //End-slider---->
+			</div>
+			<!-----//header-section----->
+
+			<!----features----->
+			<div id="fea" class="features">
+				<div class="container">
+					<div class="section-head text-center">
+						<h3><span class="frist"> </span>Features<span class="second"> </span></h3>
+						<p>As briefly described above, iBot is a movable robot which can be controlled using a video game controller. However, if you are not comfortable in handling the robot or you are afraid that it might collide with other obstacles, No worries! We have got you covered. 
+						There are sensors present at right positions so whenever any other object comes in close radius of your robot, it will automatically change its direction towards a safer way without your intervention. Alternatively, if obstacles on all the sides cover it, then it will stop at its position until there is a clear path to proceed.
+						(Hardware details explain)
+						</p>
+					</div>
+					<!----features-grids----->
+					<div class="features-grids">
+						<div class="col-md-4 features-grid">
+							<div class="features-grid-info">
+								
+								<div class="col-md-10 features-info">
+									<img src="images/cap-1.png" />
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							
+							
+						</div><!---end-features-grid---->
+						<div class="col-md-4 features-grid">
+							<div class="big-divice">
+								<img src="images/cap-11.png" />
+							</div>
+							
+						</div><!---end-features-grid---->
+						<div class="col-md-4 features-grid">
+							<div class="features-grid-info">
+								<div class="col-md-2 features-icon1">
+									<!-- <span class="f-icon3"> </span> -->
+								</div>
+								<div class="col-md-10 features-info">
+									<img src="images/cap-2.png" />
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							
+							
+						</div><!---end-features-grid---->
+
+
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+					<!----//features-grids----->
+					<!----//features----->
+
+			<!----features----->
+			<div id="fea" class="features">
+				<div class="container">
+					<div class="section-head text-center">
+						<p>        With the help of a screen attached on the topmost platform of the robot, the bot is able to interact with its surroundings in different ways. There is a camera attached at the top that makes it capable of finding QR Codes in the scene. If there is any QR code present, the bot will speak about the contents. This functionality can be used if you want to use the bot as an automated guide for a museum or library or any such place. So if it is passing by any area and it happens to notice a QR code, it will stop and dictate its contents to the listener with an interactive talking face on the screen.</p>
+					</div>
+					<!----features-grids----->
+					<div class="features-grids">
+						<div class="col-md-4 features-grid">
+							<div class="features-grid-info">
+								
+								<div class="col-md-10 features-info">
+									<img src="images/cap-3.png" />
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							
+							
+						</div><!---end-features-grid---->
+						<div class="col-md-4 features-grid">
+							<div class="big-divice">
+								<img src="images/cap-11.png" />
+							</div>
+						</div><!---end-features-grid---->
+						<div class="col-md-4 features-grid">
+							<div class="features-grid-info">
+								<div class="col-md-2 features-icon1">
+									<!-- <span class="f-icon3"> </span> -->
+								</div>
+								<div class="col-md-10 features-info">
+									<img src="images/cap-4.png" />
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							
+							
+						</div><!---end-features-grid---->
+
+						
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+					<!----//features-grids----->
+					<!----//features----->
+
+
+			<!----features----->
+			<div id="fea" class="features">
+				<div class="container">
+					<div class="section-head text-center">
+						<p>Apart from scanning QR code, the bot is also able to perform Scene Detection with Object Detection.
+						With the help of scene detection framework, the bot is able to analyses the scene and is able to point out what major objects are visible with the help of object detection. It also shows how much sure it is about the prediction in form of percentage. Such kind of functionalities can be used for assisting physically disabled people who cannot see. This bot can help them on understanding their surroundings in a better way. As in the below give picture it specifies what object are present and also specifies their position by outlining them.
+						</p>
+					</div>
+					<!----features-grids----->
+					<div class="features-grids">
+						<div class="col-md-4 features-grid">
+							<div class="features-grid-info">
+								
+								<div class="col-md-10 features-info">
+									<img src="images/cap-5.png" />
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							
+							
+						</div><!---end-features-grid---->
+						<div class="col-md-4 features-grid">
+							<div class="big-divice">
+								<img src="images/cap-12.png" />
+							</div>
+						</div><!---end-features-grid---->
+						<div class="col-md-4 features-grid">
+							<div class="features-grid-info">
+								<div class="col-md-2 features-icon1">
+									<!-- <span class="f-icon3"> </span> -->
+								</div>
+								<div class="col-md-10 features-info">
+									<img src="images/cap-6.png" />
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							
+							
+						</div><!---end-features-grid---->
+
+						
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+					<!----//features-grids----->
+					<!----//features----->					
+
+			<!----features----->
+			<div id="fea" class="features">
+				<div class="container">
+					<div class="section-head text-center">
+						<p>        On more salient feature of this bot is that it can provide you constant company. Yes! You can interact with it, ask questions and it will provide you with best possible answers. This feature can be extended to use it as an assistant in helping you remember your appointments, important dates, reminders etc.</p>
+					</div>
+					<!----features-grids----->
+					<div class="features-grids">
+						<div class="col-md-4 features-grid">
+							<div class="features-grid-info">
+								
+								<div class="col-md-10 features-info">
+									
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							
+							
+						</div><!---end-features-grid---->
+						<div class="col-md-4 features-grid">
+							<div class="big-divice">
+								<img src="images/cap-7.png" />
+							</div>
+						</div><!---end-features-grid---->
+						<div class="col-md-4 features-grid">
+							<div class="features-grid-info">
+								<div class="col-md-2 features-icon1">
+									<!-- <span class="f-icon3"> </span> -->
+								</div>
+								<div class="col-md-10 features-info">
+									
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							
+							
+						</div><!---end-features-grid---->
+
+						
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+					<!----//features-grids----->
+					<!----//features----->	
+			
+
+
+
+
+
+
+
+			<!----features----->
+			<div id="fea" class="features">
+				<div class="container">
+					<div class="section-head text-center">
+						<h3><span class="frist"> </span>Design of the iBot:<span class="second"> </span></h3>
+						<p>We used a 3-layer structure for our moving Bot. Movement of the bot is facilitated by the use of three wheels, one in the front and two at rear. Rear wheels are controllable and are connected to DC Motors while the front wheel is freely moving; therefore, the bot is Rear-wheel drive. The bottom layer mostly holds the driving and decision making components of the bot. Major components on this level are motor driver, Six ultrasonic sensors, raspberry-pi. This Bot can be moved in all eight directions and is controlled using a wired video game controller. The mid layer is where the laptop resides and the user can keep their luggage.
+						The top layer acts as the head of the bot where the LCD screen and webcam is attached. This allows the bot to take visual input and display the processed output. </p>
+					</div>
+					
+
+
+						<div class="clearfix"> </div>
+				</div>
+			</div>
+					<!----//features-grids----->
+					<!----//features----->
+
+
+
+
+
+
+			<!----features----->
+			<div id="fea" class="features">
+				<div class="container">
+					<div class="section-head text-center">
+						<h3><span class="frist"> </span>Hardware used:<span class="second"> </span></h3>
+						<p>Ultrasound Sensors:	In order to make the bot capable of avoiding obstructions and to steer it in the desired direction, an array of 6 ultrasound sensors(HC-SR04) has been used to measure the distance of various obstacles around the bot. The figure below shows the arrangement of the sensors that has been used to get distance in all the directions possible.</p>
+						<p>Motor driver:	In order to make the bot capable of carrying considerable amount of weight and to make its motion smooth, motor driver (L298N) has been used. Use of motor driver is essential as a microcontroller has a very low output current that is not capable to drive directly more than an usual indicator LED with it. The motor draws a much higher current allowing the motors to work at higher rpm and thus its pay load ability.</p>
+						<p>LCD Screen and camera:	To make the bot able to interact with the user and to allow it to capture the scenes, a LCD screen and a webcam has been attached to the bot using a mobile stand. This allows the bot to interact with the user and display the information.</p>
+					</div>
+					
+
+
+						<div class="clearfix"> </div>
+				</div>
+			</div>
+					<!----//features-grids----->
+					<!----//features----->
+
+
+
+
+
+			<!----features----->
+			<div id="fea" class="features">
+				<div class="container">
+					<div class="section-head text-center">
+						<h3><span class="frist"> </span>Software/Processes used:<span class="second"> </span></h3>
+						<p>QR code detection:For the detection of QR codes from the live scene, we have used Zbar library. Whenever the bot comes across any QR code, it stops and performs the next set of instruction according to the QR code data.
+								OpenCV facilitates the process of reading barcodes and QR codes, including loading an image from disk, grabbing a new frame from a video stream, and processing it. Once we have the image or frame we can then pass it to a dedicated Python barcode decoding library such as a Zbar. The ZBar library will then decode the barcode or QR code. OpenCV can come back in to perform any further processing and display the result. 
+								So here’s the game plan.</p> 
+								<b>Our barcode detection in video system can be broken into two components:</b><br>
+								<b>Component #1: A module that handles detecting barcodes in images (or in this case, frames of a video).</b><br>
+								<b>Component #2: A driver program that obtains access to a video feed and runs the barcode detection module.</b><br>
+								<p>Speed: The ZBar library is almost twice as fast as the OpenCV QR code detector.
+								Robustness: The ZBar library produces more robust results as compared to OpenCV on the following factors as shown in the above video, ZBar is better or comparable at various rotation, ZBar is better at different image sizes as seen from the different zoom levels in the video, ZBar is better at handling perspective distortions ( when the image is not upright w.r.t the camera).</p>
+					</div>
+					
+						<div class="col-md-4 features-grid">
+							<div class="big-divice">
+								<img src="images/cap-21.png" />
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+					<!----//features-grids----->
+					<!----//features----->		
+
+
+			<!----features----->
+			<div id="fea" class="features">
+				<div class="container">
+					<div class="section-head text-center">
+						
+						<p>Interactive Face: For the graphics of speaking emoji part, we have used Pygame library. The speaking emoji works in sync with the audio and gives a feeling of actually talking to someone. The picture above shows the face that has been using the above mentioned library.</p> 
+					</div>
+						<div class="clearfix"> </div>
+				</div>
+			</div>
+					<!----//features-grids----->
+					<!----//features----->
+
+
+
+
+
+			<!----features----->
+			<div id="fea" class="features">
+				<div class="container">
+					<div class="section-head text-center">
+						
+						<p>Threading: We used Multithreading to execute QR code scanner and face of iBot in parallel. A thread is a sequence of such instructions within a program that can be executed independently of other code. Multithreading is the ability of a processor to execute multiple threads concurrently. Multiple threads  can exist within one process where each thread contains its own register set and local variables and all thread of a process share global variables and the program code. </p> 
+					</div>
+					
+						<div class="col-md-4 features-grid">
+							<div class="big-divice">
+								<img src="images/cap-22.png" />
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+					<!----//features-grids----->
+					<!----//features----->	
+
+
+
+
+
+					<!----features----->
+			<div id="fea" class="features">
+				<div class="container">
+					<div class="section-head text-center">
+						
+						<p>Scene Captioning (Microsoft Caption Bot): Our bot is capable of understanding the scene and describing it to the user. This mode can be enabled by two ways.</p>
+								<b>1- By directly showing a QR code containing a link of any online image file.</b><br>
+								<b>2- By using a particular QR code available with the bot to use its scene detection mode. </b><br> 
+						<p>Once it comes across this code, it enters in the live imaging mode. In this mode you can click spacebar whenever you want to click an image of a live scene. This image will be saved and a description of its contents will be given by our interactive screen. For analyzing the images, we have used an AI API available from Microsoft.</p> 
+					</div>
+					
+						<div class="col-md-4 features-grid">
+							<div class="big-divice">
+								<img src="images/cap-23.png" />
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+					<!----//features-grids----->
+					<!----//features----->	
+
+
+
+					<!----features----->
+			<div id="fea" class="features">
+				<div class="container">
+					<div class="section-head text-center">
+						
+						<p>Object detection: To allow the bot to be able to detect various objects present in the visual image that it captures using the webcam, we have used YOLOv3(You Only Look Once) framework. YOLO is the state of the art object detection framework that is the present fastest available algorithm available. However, due to limitation in the processing power available in the laptop being used, the code takes around 40 seconds per image.</p> 
+					</div>
+					
+						<div class="col-md-4 features-grid">
+							<div class="big-divice">
+								<img src="images/cap-24.png" />
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+					<!----//features-grids----->
+					<!----//features----->	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+					<!----screen-shot-gallery---->
+					<div id="gallery" class="screen-shot-gallery">
+						<div class="container">
+							<div class="section-head text-center">
+								<h3><span class="frist"> </span>GALLERY<span class="second"> </span></h3>
+								<!-- <p>Few images  our iBOT</p> -->
+							</div>
+						</div>
+						<!----sreen-gallery-cursual---->
+						<div class="sreen-gallery-cursual">
+							 <!-- requried-jsfiles-for owl -->
+							<link href="css/owl.carousel.css" rel="stylesheet">
+							    <script src="js/owl.carousel.js"></script>
+							        <script>
+							    $(document).ready(function() {
+							      $("#owl-demo").owlCarousel({
+							        items : 3,
+							        lazyLoad : true,
+							        autoPlay : true,
+							      });
+							    });
+							    </script>
+							 <!-- //requried-jsfiles-for owl -->
+							 <!-- start content_slider -->
+							 <div class="container">
+						       <div id="owl-demo" class="owl-carousel">
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="images/screen.jpg" alt="screen-name">
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="images/screen.jpg" alt="screen-name">
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="images/screen.jpg" alt="screen-name">
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="images/screen.jpg" alt="screen-name">
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="images/screen.jpg" alt="screen-name">
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="images/bi-di.png" alt="screen-name">
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="images/m-driv.png" alt="screen-name">
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="images/Rpi.png" alt="screen-name">
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="images/screen.jpg" alt="screen-name">
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="images/screen.jpg" alt="screen-name">
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="images/screen.jpg" alt="screen-name">
+					                </div>
+				              </div>
+						</div>
+						<!--//sreen-gallery-cursual---->
+					</div>
+				</div>
+				<!--//screen-shot-gallery---->
+				
+
+				<!---- show-reel ---->
+				<!---pop-up-box---->
+					<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+					<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+					<!---//pop-up-box---->
+				<div class="show-reel text-center">
+					<div class="container">
+						<h5>SHOW  <a class="popup-with-zoom-anim" href="#small-dialog"><span> </span></a> REEL</h5>
+						<div id="small-dialog" class="mfp-hide">
+						<video width="100%" height="400" controls>
+  							<source src="images/video.mp4" type="video/mp4">
+						</video>
+					</div>
+					 <script>
+							$(document).ready(function() {
+							$('.popup-with-zoom-anim').magnificPopup({
+								type: 'inline',
+								fixedContentPos: false,
+								fixedBgPos: true,
+								overflowY: 'auto',
+								closeBtnInside: true,
+								preloader: false,
+								midClick: true,
+								removalDelay: 300,
+								mainClass: 'my-mfp-zoom-in'
+							});
+																							
+							});
+					</script>	
+					</div>
+				</div>
+				<!---- //show-reel ---->
+
+				<!----team---->
+				<div id="about" class="team">
+					<div class="container">
+						<div class="section-head text-center">
+							<h3><span class="frist"> </span>PEOPLE BEHIND THE iBOT<span class="second"> </span></h3>
+							<p>This project was done under part of Design Lab during our 6th Semester. We are present pre-final undergraduate students from EEE Department, Indian Institute of Technology Guwahati. Below are the people that were a part of this project. <br> (Left to right: Prof. Prithwijit Guha (Faculty Supervisor), Students involved in the project in order of their Roll Numbers).</p>
+						</div>
+					</div>
+
+					<!----team-members---->
+					<div class="team-members">
+						<div class="container">
+							<div class="col-md-3 team-member">
+								<div class="team-member-info">
+									<img class="member-pic" src="images/team-member4.jpg" />
+									<h5><a href="#">Prithwijit Guha</a></h5>
+									<span>Professor, EEE Department<br>
+									IIT Guwahati</span>									
+								</div>
+							</div><!--- end-team-member --->
+							<div class="col-md-3 team-member">
+								<div class="team-member-info">
+									<img class="member-pic" src="images/team-member1.jpg" />
+									<h5><a href="#">Chandan Agrawal</a></h5>
+									<span>160108043</span>											
+								</div>
+							</div><!--- end-team-member --->
+							<div class="col-md-3 team-member">
+								<div class="team-member-info">
+									<img class="member-pic" src="images/team-member2.jpg" />
+									<h5><a href="#">Avish Kabra</a></h5>
+									<span>160108044</span>									
+								</div>
+							</div><!--- end-team-member --->
+							<div class="col-md-3 team-member">
+								<div class="team-member-info">
+									<img class="member-pic" src="images/team-member3.jpg" />
+									<h5><a href="#">Prateek Manocha</a></h5>
+									<span>160108045</span>		
+								</div>
+							</div><!--- end-team-member --->
+							<div class="clearfix"> </div>
+						</div>
+							<div class="clearfix"> </div>
+					<!--//team-members---->
+					</div>
+				</div>
+				<!----//team---->
+				<div class="clearfix"> </div>			
+	</body>
+</html>
+
